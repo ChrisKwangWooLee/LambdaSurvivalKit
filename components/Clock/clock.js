@@ -49,7 +49,7 @@ function createClock() {
         }
 
     // Change color of clock test based on time
-    // Work day (Monday - Friday) / Work time (8am - )
+    // Work day (Monday - Friday) / Work time (8am - 6pm)
     let newHour = Number(dateArr[4].split(':')[0]);
     let workday = (dow === 'Mon' || dow === 'Tue' || dow === 'Wed' || dow === 'Thur' || dow === 'Fri');
     let worktime = (newHour >= 8 && newHour <= 18);
