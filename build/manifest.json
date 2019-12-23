@@ -1,0 +1,47 @@
+{
+  "short_name": "Lambda Kit",
+  "name": "Lambda Survival Kit",
+  "description": "Chrome extension that allows easy access to useful websites for lambda web development students + other features",
+  "icons": {
+    "128": "lambda_logo.png"
+  },
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "Open the popup",
+    "default_icon": "lambda_logo.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*"
+      ],
+      "run_at": "document_idle",
+      "js": [
+        "/static/js/contentScript.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "storage",
+    "alarms",
+    "tabs",
+    "notifications",
+    "unlimitedStorage",
+    "activeTab",
+    "storage",
+    "webNavigation",
+    "activeTab",
+    "declarativeContent",
+    "contextMenus",
+    "*://*/*"
+  ],
+  "content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  }
+}
