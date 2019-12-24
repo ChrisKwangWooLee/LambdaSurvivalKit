@@ -1,0 +1,37 @@
+header {
+    height: 4.5rem;
+    width: 100%;
+    background: @lambda-header-background;
+
+    .header-title-container {
+        height: 4.6rem;
+        border-bottom: 0.5rem solid @lambda-red;
+        .displayFlex(row, space-between, center);
+
+        img {
+            width: 2.5rem;
+            margin-left: 1.3rem;
+        }
+        h1 {
+            color: #E5E3F4;
+            font-size: 1.15rem;
+            font-weight: 100;
+            margin-left: 1.6rem;
+
+
+            .lambda-word {
+                color: @lambda-red;
+            }
+            
+            .version {
+                font-size: 0.9rem;
+                margin-left: .7rem;
+            }
+        }
+
+        .line {
+            border: 1px solid #B4B4B4;
+            height: 30px;
+        }
+    }
+}

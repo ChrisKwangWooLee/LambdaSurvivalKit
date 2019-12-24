@@ -1,0 +1,33 @@
+.topNav-container {
+    width: 100%;
+    .displayFlex(row, space-around, center);
+    background: @lambda-background-white;
+
+    .topNav-Item {
+        width: 25%;
+        padding: 10px 5px 5px 5px;
+        .displayFlex(column, space-around, center);
+
+        h2 {
+            font-size: 1.0rem;
+            text-align: center;
+            margin-top: 3px;
+        }
+    }
+
+    .topNav-Item:hover {
+        background: rgb(170, 170, 170);
+        cursor: pointer;
+    }
+
+    .lambda {
+        img {
+            width: 30px;
+        }
+    }
+
+    .topNav-line {
+        height: 30px;
+        border: 0.5px solid @lambda-header-background;
+    }
+}
