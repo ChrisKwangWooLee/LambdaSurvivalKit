@@ -48,7 +48,7 @@ export const BookmarkData = {
         name: "React document",
         category: "JS",
         subcategory: "Documentation",
-        url: "reactjs.org"
+        url: "https://reactjs.org"
       },
       {
         id: "8",

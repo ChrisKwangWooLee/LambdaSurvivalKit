@@ -21,29 +21,31 @@ function LSK_Nav({handleBookmarks}) {
                         <h2 className="HTML">HTML</h2>
                 </div>
                 <div className='topNav-line'></div>
-                <div className="topNav-Item CSS_Style">
+                <div className="topNav-Item CSS_Style" onClick={event => handleBookmarks(event)}>
                     <FontAwesomeIcon icon={faCss3Alt} 
+                                     className="CSS_Style"
                                      style={{
                                         color: "#383651",
                                         fontSize: "30px",
                                         textAlign: "center"
                                     }}/>
-                    <h2>CSS/UI</h2>
+                    <h2 className="CSS_Style">CSS/UI</h2>
                 </div>
                 <div className='topNav-line'></div>
-                <div className="topNav-Item javascript" >
+                <div className="topNav-Item javascript" onClick={event => handleBookmarks(event)}>
                     <FontAwesomeIcon icon={faJsSquare} 
+                                     className="javascript"
                                      style={{
                                         color: "#383651",
                                         fontSize: "30px",
                                         textAlign: "center"
                                     }}/>
-                    <h2> Javscript</h2>
+                    <h2 className="javascript"> Javscript</h2>
                 </div>
                 <div className='topNav-line'></div>
-                <div className="topNav-Item lambda">
-                    <img src="lambda_logo.png" alt="Lambda navigation" />
-                    <h2>Lambda</h2>
+                <div className="topNav-Item lambda" onClick={event => handleBookmarks(event)}>
+                    <img src="lambda_logo.png" alt="Lambda navigation" className="lambda"/>
+                    <h2 className="lambda">Lambda</h2>
                 </div>
         </nav>
     )

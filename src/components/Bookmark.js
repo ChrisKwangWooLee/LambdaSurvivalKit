@@ -1,13 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
 
-function Bookmark({bookmarkData}) {
-    console.log(bookmarkData);
+function Bookmark({bookmark}) {
     return(
-        <div className="bookmark-container">
-            <a href={bookmarkData.url} target="_blank"><h2>{bookmarkData.name}</h2></a>
-            
+        <div className="bookmark">
+            <a href={bookmark.url} target="_blank">{bookmark.name}</a>
         </div>
     )
 }
-export default Bookmark;
+export default Bookmark
