@@ -1,3 +1,11 @@
+/*
+
+Data MUST include...
+  1) id, name, category, subcategory, and url.
+  2) Subcategories will automatically be updated (no need to hard code)
+
+
+*/
 
 export const BookmarkData = {
     results: [

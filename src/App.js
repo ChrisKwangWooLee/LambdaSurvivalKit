@@ -13,10 +13,19 @@ function App() {
   const [data] = useState(BookmarkData.results); // initial import
   const [bookmarks, setBookmarks] = useState([]);  // this is DISPLAYED
   const [subcategories, setSubcategories] = useState([]);
+  
+  // handle navigation toggle
+  const [navIsOpen, setNavIsOpen] = useState(true);
+  const navToggle = () => {
+      console.log("Navigation clicked")
+      return setNavIsOpen(!navIsOpen)};
 
   console.log("Imported Data",data);
 
   function handleBookmarks(event) {
+    setNavIsOpen(!navIsOpen)
+    
+    if (navIsOpen) {
       if (event.target.getAttribute('class').toLowerCase().includes('html')) {
         console.log("HTML clicked");
         
@@ -78,6 +87,9 @@ function App() {
         setSubcategories(getUnique(newSubcategories));
       }
 
+    } else {
+      setSubcategories([]);
+    }
   }
 
 
@@ -98,7 +110,6 @@ function App() {
             return <Subcategory key={index} subcategory={subcategory} bookmarks={bookmarks}/>
           }) : null
         }
-        <button onClick={()=> setSubcategories([])}>close</button>
       </BookmarksContainer>
     </div>
   );
@@ -116,5 +127,5 @@ function getUnique(array) {
     }
   }
 
-  return uniqueArray;
+  return uniqueArray.sort();
 }

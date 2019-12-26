@@ -12,9 +12,27 @@ function Subcategory({subcategory, bookmarks}) {
     const subcategory_bookmark = bookmarks.filter(item => {
         return item.subcategory === subcategory;
     })
+
+    const SubcategoryContainer = styled.div`
+        width: 384px;
+    `
+
+    const SubcategoryRow = styled.div`
+        border-bottom: 0.5px solid white;
+        background: #55596d;
+
+        color: white;
+        cursor: pointer;
+        padding: 12px 0px 12px 20px;
+    `
     return(
-        <div>
-            <button color="primary" onClick={toggle} style={{ marginBottom: '1rem' }}>{subcategory}</button>
+        <SubcategoryContainer className="subcategoryContainer">
+            <SubcategoryRow className="subcategoryRow"color="primary" onClick={toggle}>
+                <span style={{marginRight: '5px'}}>{isOpen ? `\u25BC` : `►`}</span>
+                                        {
+                                            subcategory
+                                        }
+            </SubcategoryRow>
             <Collapse isOpen={isOpen}>
                 <Card>
                 <CardBody>
@@ -26,7 +44,7 @@ function Subcategory({subcategory, bookmarks}) {
                 </CardBody>
                 </Card>
             </Collapse>
-        </div>
+        </SubcategoryContainer>
     )
 }
 export default Subcategory;
