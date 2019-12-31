@@ -99,11 +99,11 @@ function App() {
   `
 
   return (
-    <div className="container">
+    <div className="container" style={{border: "none"}}>
       <LSK_Header />
       <LSK_Nav handleBookmarks={handleBookmarks}/>
       
-      {/* {Render Filtered Bookmarks} */}
+      {/* Render Filtered Bookmarks */}
       <BookmarksContainer className="bookmark-container">
         {
           subcategories.length !== 0 ? subcategories.map( (subcategory, index) => {

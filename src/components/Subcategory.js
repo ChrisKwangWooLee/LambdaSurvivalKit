@@ -19,23 +19,30 @@ function Subcategory({subcategory, bookmarks}) {
 
     const SubcategoryRow = styled.div`
         border-bottom: 0.5px solid white;
-        background: #55596d;
+        background: #797e99;
 
         color: white;
         cursor: pointer;
         padding: 12px 0px 12px 20px;
+
+        &:hover {
+            background: #5d6175;
+        }
     `
     return(
         <SubcategoryContainer className="subcategoryContainer">
             <SubcategoryRow className="subcategoryRow"color="primary" onClick={toggle}>
-                <span style={{marginRight: '5px'}}>{isOpen ? `\u25BC` : `►`}</span>
+                <span style={{marginRight: '5px'}}>{isOpen ? `\u25BD` : `\u25B7`}</span>
                                         {
-                                            subcategory
+                                            subcategory 
+                                        }
+                                        {
+                                            `       (${subcategory_bookmark.length})`
                                         }
             </SubcategoryRow>
             <Collapse isOpen={isOpen}>
-                <Card>
-                <CardBody>
+                <Card style={{padding: "0", borderRadius: "0"}}>
+                <CardBody style={{padding: "0", background: "#c9d0f5", borderRadius: "0"}}>
                     {
                         subcategory_bookmark.map(bookmark => {
                             return <Bookmark key={bookmark.id} bookmark={bookmark} />

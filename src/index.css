@@ -58,7 +58,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  border: 1px solid blue;
   max-width: 384px;
   width: 384px;
 }
