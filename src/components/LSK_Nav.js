@@ -17,6 +17,7 @@ function LSK_Nav({handleBookmarks}) {
         width: 95px;
         height: 72px;
     `
+
     return(
         <nav className="topNav-container">
                 <div className="topNav-Item HTML" onClick={event => handleBookmarks(event)}>
@@ -31,7 +32,7 @@ function LSK_Nav({handleBookmarks}) {
                         <h2 className="HTML">HTML</h2>
                 </div>
                 <div className='topNav-line'></div>
-                <div className="topNav-Item CSS_Style" onClick={event => handleBookmarks(event)}>
+                <div className="topNav-Item CSS_Style" onClick={event => handleBookmarks(event)} >
                     <Mask className="mask CSS_Style" style={{left: "96.5px"}}></Mask>
                     <FontAwesomeIcon icon={faCss3Alt} 
                                      className="CSS_Style"
@@ -43,7 +44,7 @@ function LSK_Nav({handleBookmarks}) {
                     <h2 className="CSS_Style">CSS/UI</h2>
                 </div>
                 <div className='topNav-line'></div>
-                <div className="topNav-Item javascript" onClick={event => handleBookmarks(event)}>
+                <div className="topNav-Item javascript" onClick={event => handleBookmarks(event)} >
                     <Mask className="mask javascript" style={{left: "193px"}}></Mask>
                     <FontAwesomeIcon icon={faJsSquare} 
                                      className="javascript"
@@ -55,7 +56,7 @@ function LSK_Nav({handleBookmarks}) {
                     <h2 className="javascript"> Javscript</h2>
                 </div>
                 <div className='topNav-line'></div>
-                <div className="topNav-Item lambda" onClick={event => handleBookmarks(event)}>
+                <div className="topNav-Item lambda" onClick={event => handleBookmarks(event)} >
                     <Mask className="mask lambda" style={{left: "289.5px"}}></Mask>
                     <img src="lambda_logo.png" alt="Lambda navigation" className="lambda"/>
                     <h2 className="lambda">Lambda</h2>

@@ -19,7 +19,7 @@ export const BookmarkData = {
       },
       {
         id: "2",
-        name: "MDN HTML document",
+        name: "MDN HTML Overview",
         category: "HTML",
         subcategory: "Documentation",
         url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
@@ -93,7 +93,7 @@ export const BookmarkData = {
         id: "11",
         name: "Lambda Calendar",
         category: "Lambda",
-        subcategory: "Essentials",
+        subcategory: "Daily",
         url: "https://calendar.google.com/calendar/r?cid=bGFtYmRhc2Nob29sLmNvbV9nMDJtNTRlZTFxcWR1b2Rhbjdta2lqa3M5Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t",
         favicon: "https://calendar.google.com/googlecalendar/images/favicon_v2014_1.ico"
       },
@@ -136,6 +136,182 @@ export const BookmarkData = {
         subcategory: "Essentials",
         url: "https://github.com/",
         favicon: "https://github.githubassets.com/favicon.ico"
-      }
+      },
+      {
+        id: "17",
+        name: "MDN HTML Elements",
+        category: "HTML",
+        subcategory: "Documentation",
+        url: "https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Image_and_multimedia",
+        favicon: "https://developer.mozilla.org/static/img/favicon144.e7e21ca263ca.png"
+      },
+      {
+        id: "18",
+        name: "MDN HTML Attribute",
+        category: "HTML",
+        subcategory: "Documentation",
+        url: "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes",
+        favicon: "https://developer.mozilla.org/static/img/favicon144.e7e21ca263ca.png"
+      },
+      {
+        id: "19",
+        name: "Semantic HTML",
+        category: "HTML",
+        subcategory: "Documentation",
+        url: "https://internetingishard.com/html-and-css/semantic-html/",
+        favicon: "https://internetingishard.com/img/favicons/favicon-204b2d.ico"
+      },
+      {
+        id: "20",
+        name: "Bacon Ipsum",
+        category: "HTML",
+        subcategory: "Essentials",
+        url: "https://baconipsum.com/",
+        favicon: "https://baconipsum.com/wp-content/themes/baconipsum-custom-theme-v2/images/apple-touch-icon.png"
+      },
+      {
+        id: "21",
+        name: "Centering in CSS",
+        category: "CSS-Style",
+        subcategory: "Documentation",
+        url: "https://css-tricks.com/centering-css-complete-guide/",
+        favicon: "https://css-tricks.com/apple-touch-icon.png"
+      },
+      {
+        id: "22",
+        name: "<hr> in CSS",
+        category: "CSS-Style",
+        subcategory: "Documentation",
+        url: "https://css-tricks.com/examples/hrs/",
+        favicon: "https://css-tricks.com/apple-touch-icon.png"
+      },
+      {
+        id: "23",
+        name: "Box Model in CSS",
+        category: "CSS-Style",
+        subcategory: "Documentation",
+        url: "https://css-tricks.com/the-css-box-model/",
+        favicon: "https://css-tricks.com/apple-touch-icon.png"
+      },
+      {
+        id: "24",
+        name: "Flexbox in CSS",
+        category: "CSS-Style",
+        subcategory: "Documentation",
+        url: "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
+        favicon: "https://css-tricks.com/apple-touch-icon.png"
+      },
+      {
+        id: "25",
+        name: "CSS Color Names",
+        category: "CSS-Style",
+        subcategory: "Color Tools",
+        url: "https://colours.neilorangepeel.com/",
+        favicon: "https://colours.neilorangepeel.com/wp-content/themes/colours-v2/_/_images/favicon.png"
+      },
+      {
+        id: "26",
+        name: "Color Picker",
+        category: "CSS-Style",
+        subcategory: "Color Tools",
+        url: "https://www.webfx.com/web-design/color-picker/5D7DAF/",
+        favicon: ""
+      },
+      {
+        id: "27",
+        name: "30 CSS Selectors You Must Memorize",
+        category: "CSS-Style",
+        subcategory: "Documentation",
+        url: "https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048",
+        favicon: "https://static.tutsplus.com/assets/favicon-9e8b377989d9949ad1003dc5298cd8ef.png"
+      },
+      {
+        id: "28",
+        name: "CSS Font Stack",
+        category: "CSS-Style",
+        subcategory: "Documentation",
+        url: "https://www.cssfontstack.com/",
+        favicon: "https://dpidudyah7i0b.cloudfront.net/favicon.ico"
+      },
+      {
+        id: "29",
+        name: "CSS Zen Garden",
+        category: "CSS-Style",
+        subcategory: "Style Reference",
+        url: "http://www.csszengarden.com/221/",
+        favicon: "?"
+      },
+      {
+        id: "30",
+        name: "Unsplash",
+        category: "CSS-Style",
+        subcategory: "Picture Tools",
+        url: "https://unsplash.com/",
+        favicon: "https://unsplash.com/favicon-32x32.png"
+      },
+      {
+        id: "31",
+        name: "PicResize",
+        category: "CSS-Style",
+        subcategory: "Picture Tools",
+        url: "https://picresize.com/",
+        favicon: "https://picresize.com/favicon.ico?v=2"
+      },
+      {
+        id: "32",
+        name: "TinyPNG",
+        category: "CSS-Style",
+        subcategory: "Picture Tools",
+        url: "https://tinypng.com/",
+        favicon: "https://tinypng.com/images/favicon.ico"
+      },
+      {
+        id: "33",
+        name: "Clipchamp",
+        category: "CSS-Style",
+        subcategory: "Video Tools",
+        url: "https://clipchamp.com/en/blog/2017/optimize-videos-web-design",
+        favicon: "https://clipchamp.com/wp-content/themes/clipchamp-2018/assets/icons/favicon.ico"
+      },
+      {
+        id: "34",
+        name: "HTML5 UP!",
+        category: "CSS-Style",
+        subcategory: "Style Reference",
+        url: "https://html5up.net/",
+        favicon: "https://html5up.net/assets/icons/favicon.ico"
+      },
+      {
+        id: "35",
+        name: "Less Documentation",
+        category: "CSS-Style",
+        subcategory: "Documentation",
+        url: "http://lesscss.org/",
+        favicon: "http://lesscss.org/public/ico/favicon.ico"
+      },
+      {
+        id: "36",
+        name: "Dribble",
+        category: "CSS-Style",
+        subcategory: "Style Reference",
+        url: "https://dribbble.com/",
+        favicon: "https://cdn.dribbble.com/assets/favicon-63b2904a073c89b52b19aa08cebc16a154bcf83fee8ecc6439968b1e6db569c7.ico"
+      },
+      {
+        id: "37",
+        name: "Awwards",
+        category: "CSS-Style",
+        subcategory: "Style Reference",
+        url: "https://www.awwwards.com/",
+        favicon: "https://www.awwwards.com/favicon.ico"
+      },
+      {
+        id: "38",
+        name: "Figma",
+        category: "CSS-Style",
+        subcategory: "Essentials",
+        url: "https://www.figma.com/files/recent",
+        favicon: "https://static.figma.com/app/icon/1/favicon.png"
+      },
     ]
   }

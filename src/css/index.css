@@ -160,7 +160,6 @@ p {
 .container {
   max-width: 384px;
   width: 384px;
-  border: 1px solid blue;
   padding: 0 !important;
   display: flex;
   flex-direction: column;
@@ -248,6 +247,7 @@ header .header-title-container .line {
 }
 .topNav-container .topNav-Item:hover {
   background: #aaaaaa;
+  transition: 0.4s ease;
   cursor: pointer;
 }
 .topNav-container .lambda img {
