@@ -12,17 +12,6 @@
     "default_title": "Open the popup",
     "default_icon": "lambda_logo.png"
   },
-  "content_scripts": [
-    {
-      "matches": [
-        "https://lambdasurvivalkit/settings"
-      ],
-      "run_at": "document_idle",
-      "js": [
-        "/static/js/contentScript.js"
-      ]
-    }
-  ],
   "permissions": [
     "activeTab"
   ],

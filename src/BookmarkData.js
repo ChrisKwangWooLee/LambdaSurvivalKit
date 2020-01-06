@@ -128,6 +128,14 @@ export const BookmarkData = {
         subcategory: "Instructor Notes (Christina Gorton)",
         url: "https://www.notion.so/Guided-Project-Notes-27dc27053dc64f3fa277879d0ea76a68",
         favicon: "https://www.notion.so/images/favicon.ico"
+      },
+      {
+        id: "16",
+        name: "GitHub",
+        category: "Lambda",
+        subcategory: "Essentials",
+        url: "https://github.com/",
+        favicon: "https://github.githubassets.com/favicon.ico"
       }
     ]
   }

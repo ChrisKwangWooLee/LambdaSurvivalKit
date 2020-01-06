@@ -8,24 +8,26 @@ import LSK_Nav from './components/LSK_Nav';
 import {BookmarkData} from './BookmarkData';
 import Subcategory from './components/Subcategory';
 
+let previousState = "@";
+
 function App() {
 
   const [data] = useState(BookmarkData.results); // initial import
   const [bookmarks, setBookmarks] = useState([]);  // this is DISPLAYED
   const [subcategories, setSubcategories] = useState([]);
   
-  // handle navigation toggle
-  const [navIsOpen, setNavIsOpen] = useState(true);
-  const navToggle = () => {
-      console.log("Navigation clicked")
-      return setNavIsOpen(!navIsOpen)};
-
   console.log("Imported Data",data);
 
+  // handle navigation toggle
   function handleBookmarks(event) {
-    setNavIsOpen(!navIsOpen)
-    
-    if (navIsOpen) {
+
+    console.log("Previous State:", previousState)
+    console.log("Current State:", event.target.getAttribute('class'))
+
+    let isClose = event.target.getAttribute('class').toLowerCase().includes(previousState.toLowerCase());
+
+    console.log("Close?", isClose)
+    if (!isClose) {
       if (event.target.getAttribute('class').toLowerCase().includes('html')) {
         console.log("HTML clicked");
         
@@ -34,8 +36,9 @@ function App() {
           }
         )
         setBookmarks(newBookmark);
+        previousState = "HTML"
 
-        // Generate subcategories
+        // Generate subcategories 
         let newSubcategories = newBookmark.map(item => {
           return item.subcategory;
         })
@@ -49,8 +52,9 @@ function App() {
           }
         )
         setBookmarks(newBookmark);
+        previousState = "css"
 
-        // Generate subcategories
+        // Generate subcategories ()
         let newSubcategories = newBookmark.map(item => {
           return item.subcategory;
         })
@@ -64,6 +68,7 @@ function App() {
           }
         )
         setBookmarks(newBookmark);
+        previousState = "javascript"
 
         // Generate subcategories
         let newSubcategories = newBookmark.map(item => {
@@ -79,16 +84,19 @@ function App() {
           }
         )
         setBookmarks(newBookmark);
+        previousState = "lambda"
 
         // Generate subcategories
         let newSubcategories = newBookmark.map(item => {
           return item.subcategory;
         })
         setSubcategories(getUnique(newSubcategories));
-      }
-
+      }    
     } else {
       setSubcategories([]);
+
+      //update previous state to null ("") when bookmarks are closed
+      previousState = "@";
     }
   }
 
